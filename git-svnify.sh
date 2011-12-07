@@ -5,7 +5,8 @@ for I in Java Files "C#"
 do
 cd "$I"
 git svn init --stdlayout "https://fpml-toolkit.svn.sourceforge.net/svnroot/fpml-toolkit/$I"
-git update-ref refs/remotes/git-svn refs/remotes/origin/master
+cp .git/refs/remotes/origin/HEAD .git/refs/remotes/trunk
+rm -rf .git/svn
 git svn fetch
 cd ..
 done
