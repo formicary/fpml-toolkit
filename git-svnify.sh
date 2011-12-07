@@ -1,6 +1,6 @@
 #/bin/bash
-git submodules init
-git submodules update
+git submodule init
+git submodule update
 for I in Java Files C#
 do
 cd $I
