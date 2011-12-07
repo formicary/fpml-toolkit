@@ -2,19 +2,8 @@ This projects submodules C# Java Files which are all git-svn projects.
 
 On clone submodules are not populated and git-svn meta is lost
 
-So to fetch submodules do 
-
-$ git submodule init
-$ git submodule update
-
-And to recreate meta do for each module
-
-$ git svn init --stdlayout "https://fpml-toolkit.svn.sourceforge.net/svnroot/fpml-toolkit/$submodule"
-$ git update-ref refs/remotes/git-svn refs/remotes/origin/master
-$ git svn fetch
-
-Or simply run 
+Run 
 
 $ ./git-svnify.sh
 
-in the root of the project
+in the root of the project to fix this.
