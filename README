@@ -1,4 +1,4 @@
-This projects submodules C# Java Files which import all the a git-svn project. 
+This projects submodules C# Java Files which are all git-svn projects. 
 
 On clone submodules are not populated and git-svn meta is lost
 
