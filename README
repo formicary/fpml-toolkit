@@ -1,8 +1,20 @@
-This will contain submodules C# Java Files which import all the svn project. 
+This projects submodules C# Java Files which import all the a git-svn project. 
 
-but after a clone be sure to 
+On clone submodules are not populated and git-svn meta is lost
 
-git submodule init
-git submodule update
+So to fetch submodules do 
 
-which will populate them
+$ git submodule init
+$ git submodule update
+
+And to recreate meta do for each module
+
+$ git svn init --stdlayout "https://fpml-toolkit.svn.sourceforge.net/svnroot/fpml-toolkit/$submodule"
+$ git update-ref refs/remotes/git-svn refs/remotes/origin/master
+$ git svn fetch
+
+Or simply run 
+
+$ ./git-svnify.sh
+
+in the root of the project
