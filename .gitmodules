@@ -1,0 +1,9 @@
+[submodule "C#"]
+	path = "C#"
+	url = git://github.com/formicary/fpml-toolkit-csharp.git
+[submodule "Files"]
+	path = Files
+	url = git://github.com/formicary/fpml-toolkit-files
+[submodule "Java"]
+	path = Java
+	url = git://github.com/formicary/fpml-toolkit-java
