@@ -4,6 +4,6 @@ On clone submodules are not populated and git-svn meta is lost
 
 Run 
 
-$ ./git-svnify.sh
+$ ./git-svnify-all.sh
 
-in the root of the project to fix this.
+in the root of the project to fix this it take quite a while to run.
