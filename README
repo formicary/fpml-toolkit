@@ -1,4 +1,4 @@
-This projects submodules C# Java Files which are all git-svn projects. 
+This projects contains submodules C# Java Files which are all git-svn projects. 
 
 On clone submodules are not populated and git-svn meta is lost
 
@@ -6,4 +6,5 @@ Run
 
 $ ./git-svnify-all.sh
 
-in the root of the project to fix this it take quite a while to run.
+in the root of the project to fix this it takes quite a while to run.
+
